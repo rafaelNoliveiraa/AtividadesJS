@@ -1,0 +1,76 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//BR" "http//ww.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- Programa do arquivo 12_JS_SomaVariosNumeros -->
+
+<html xmln="http://ww.w3.org/1999/xhtml">
+
+<head>
+    <title> Multiplas Seleção entre XHTML formato lista </title>
+    <script type = "text/javascript">
+        <!--
+            var escolha;
+            var TagInicio;
+            var TagFinal;
+            var validaEntrada = true;
+            var tipoLista;
+
+            escolha = prompt("Selecione o stylo da lista:\n" + "1 (numerico), 2 (letra), 3 (Romano)"," 1");
+
+            switch (escolha)
+            {
+            case "1":
+                TagInicio = "<ol>";
+                TagFinal = "</ol>";
+                tipoLista= "<h1> Lista Numerica </h1>";
+                break;
+            case "2":
+                TagInicio = "<ol style = \"list-style-type: upper-alpha\">";
+                TagFinal = "</ol>";
+                tipoLista= "<h1> Lista letra </h1>";
+                break;
+            case "3":
+                TagInicio = "<ol style = \"list-style-type: upper-roman\">";
+                TagFinal = "</ol>";
+                tipoLista= "<h1> Lista Romana </h1>";
+                break;
+                default:  
+                validaEntrada= false;
+            }
+            if (validaEntrada == true){
+                document.writeln(tipoLista + TagInicio)
+                for (var i = 1; i <= 3; ++i)
+                document.writeln("<li> List item " + i + "</li>");
+                document.writeln(TagFinal);
+            }
+            else 
+                document.writeln ("Opçao invalida:" + escolha);
+
+                
+
+            
+            
+            
+            
+            -->
+    </script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+             
+    
+
+
+</head>
+
+<body>
+    <p> Click Refresh (ou reload) para executar este script agora.</p>
+</body>
+
+</html>
